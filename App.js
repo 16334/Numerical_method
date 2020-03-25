@@ -24,6 +24,7 @@ class App extends Component{
             <li><a href={"/OnePoint"}>One-Point Method</a></li>
             <li><a href={"/NewtonRaphson"}>Newton-Raphson Method</a></li>
             <li><a href={"/Secant"}>Secant Method</a></li>
+            <li><a href={"/Bisection"}>Bisection Method test</a></li>
           </ul></h4>
 
         <br/>
@@ -38,20 +39,29 @@ class App extends Component{
         <br/>
 
          <h3 style={textStyle}>LEAST-SQUARES REGRESSION</h3>
+          <h4><ul>
+            <li><a href={"/Linear"}>Linear Regression</a></li>
+            <li><a href={"/Polynomial"}>Polynomial Regression</a></li>
+            <li><a href={"/MultipleLinear"}>Multiple Linear Regression</a></li>
+            <li><a href={"/MultiplePolynomial"}>Multiple Polynomial Regression</a></li>
+          </ul></h4>
 
         <br/> 
 
         <h3 style={textStyle}>SOLUTIONS OF LINEAR ALGEBRAIC EQUATIONS</h3>
           <h4><ul>
-            <li><a href={"/"}>Cramer’s Rule</a></li>
-            <li><a href={"/"}>Gauss Elimination Method</a></li>
-            <li><a href={"/"}>Gauss-Jordan Method</a></li>
-            <li><a href={"/"}>LU Decomposition Method</a></li>
-            <li><a href={"/"}>Cholesky Decomposition Method</a></li>
-            <li><a href={"/"}> Jacobi Iteration Method</a></li>
-            <li><a href={"/"}>Gauss-Seidel Iteration Method</a></li>
-            <li><a href={"/"}>Conjugate Gradient Method</a></li>
+            <li><a href={"/Cramer"}>Cramer’s Rule</a></li>
+            <li><a href={"/GaussElimination"}>Gauss Elimination Method</a></li>
+            <li><a href={"/GaussJordan"}>Gauss-Jordan Method</a></li>
+            <li><a href={"/LUDecomposition"}>LU Decomposition Method</a></li>
+            <li><a href={"/Cholesky"}>Cholesky Decomposition Method</a></li>
+            <li><a href={"/Jacobi"}> Jacobi Iteration Method</a></li>
+            <li><a href={"/GaussSeidel"}>Gauss-Seidel Iteration Method</a></li>
+            <li><a href={"/Conjugate"}>Conjugate Gradient Method</a></li>
           </ul></h4>
+
+          <br/>
+
       </div>
     );
   }
