@@ -3,15 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter,Ro} from 'react-router-dom';
+import {BrowserRouter,Route, Switch} from 'react-router-dom';
 import Bisection from './Bisection';
-
+import BisectionM from './BisectionM';
+import Spline from './Spline';
 
 ReactDOM.render(
-  <App />,
-  <BrowserRouter >
-    <Route path="/" component={App}/>
-    <Route path="/Bisection" component={Bisection}/>
+  
+  <BrowserRouter>
+ {/*  <App /> */}
+    <Route exact path="/" component={App}/>
+    <Route exact path="/Bisection" component={Bisection}/>
+    <Route exact path="/Spline" component={Spline}/>
+    <Route exact path="/BisectionM" component={BisectionM
+    }/>
   </BrowserRouter>,
   document.getElementById('root')
 );
